@@ -1,1 +1,1 @@
-enum CroatianHoliday { victoryAndHomelandThanksgivingDay }
+enum CroatianHoliday { victoryAndHomelandThanksgivingDay, christmas }

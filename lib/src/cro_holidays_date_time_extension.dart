@@ -20,6 +20,11 @@ extension CroHolidaysDateTimeExtension on DateTime {
       return CroatianHoliday.victoryAndHomelandThanksgivingDay;
     }
 
+    final isChristmas = month == 12 && day == 25;
+    if (isChristmas) {
+      return CroatianHoliday.christmas;
+    }
+
     return null;
   }
 }
