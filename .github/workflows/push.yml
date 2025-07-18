@@ -1,0 +1,23 @@
+name: push
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test print something
+        run: |
+          echo "This is a test step to print something."
+
+      # - name: Set up Dart
+      #   uses: dart-lang/setup-dart@v2
+
+      # - name: Set up Dart
+      #   uses: dart-lang/setup-dart@v2
