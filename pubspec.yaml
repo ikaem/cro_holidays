@@ -1,6 +1,6 @@
 name: cro_holidays
 description: A simple library to get Croatian holidays.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/ikaem/cro_holidays
 homepage: https://github.com/ikaem/cro_holidays
 
