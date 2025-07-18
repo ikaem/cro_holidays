@@ -1,5 +1,5 @@
 name: cro_holidays
-description: A starting point for Dart libraries or applications.
+description: A simple library to get Croatian holidays.
 version: 1.0.0
 repository: https://github.com/ikaem/cro_holidays
 homepage: https://github.com/ikaem/cro_holidays
