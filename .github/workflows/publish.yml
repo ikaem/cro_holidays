@@ -1,0 +1,30 @@
+name: publish
+
+# publishes to pub.dev
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Run tests
+        run: dart test
+
+      - name: Publish package dry run
+        run: dart pub publish --dry-run
+
+      - name: Publish package
+        run: dart pub publish --force
